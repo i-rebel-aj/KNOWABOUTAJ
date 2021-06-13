@@ -54,11 +54,15 @@ a .icons {
 }
 
 #projects,
-#skills {
+#contact, #responsibilities {
     padding-top: 5%;
+    padding-bottom: 5%;
     background-color: #020F23;
 }
-
+#experience, #skills{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 #about p {
     font-family: 'Roboto Slab', serif;
     font-weight: normal;
@@ -76,7 +80,7 @@ a .icons {
 }
 
 #about .card img {
-    border: 20px solid white;
+    border: 10px solid white;
 }
 
 .bg-orange {
@@ -118,7 +122,6 @@ a .icons {
         opacity: 1
     }
 }
-
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -134,4 +137,44 @@ a .icons {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+.bg-dark {
+    background-color: #000000!important;
+}
+
+/*
+    Typing Effect
+*/
+body .typing-container {
+    justify-content: center;
+    align-items: center;
+}
+body .typing-container #feature-text {
+    margin-left: 8px;
+}
+body .typing-container .input-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 2.2vw;
+    background-color: white;
+    margin-left: 8px;
+    margin-top: 3px;
+    animation: blink 0.6s linear infinite alternate;
+}
+.typing-container{
+    font-size: clamp(1rem, -0.875rem + 2.555vw, 2.5rem);
+}
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
 }
