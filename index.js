@@ -98,8 +98,24 @@ const carouselText = [
             color: 'white'
           },
           {
-            text: "the Indian Institute of Information Technology, Guwahati",
+            text: "the Indian Institute of Information Technology, Guwahati. ",
             color: '#9797f9'
+          },
+          {
+            text:"I have been a",
+            color: 'white'
+          },
+          {
+            text:" MERN stack developer ",
+            color: "#13aa52"
+          },
+          {
+            text:"for the past ",
+            color: "white"
+          },
+          {
+            text:"2 Years",
+            color: "#ec72ac"
           },
           {
                 text:" and I am currently looking for job opportunities for the role of a",

@@ -54,12 +54,12 @@ a .icons {
 }
 
 #projects,
-#contact, #responsibilities {
+#contact, #experience {
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #020F23;
 }
-#experience, #skills{
+#responsibilities, #skills{
     padding-top: 5%;
     padding-bottom: 5%;
 }
