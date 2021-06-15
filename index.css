@@ -102,7 +102,10 @@ a .icons {
 .card {
     border-color: white;
 }
-
+.myCard{
+    width: 20rem;
+    margin: 10px;
+}
 @keyframes fadeInUp {
     from {
         transform: translate3d(0, 40px, 0)
