@@ -8,93 +8,283 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <style>
         div {
             margin: 0 auto;
-            width: 50%;
+            max-width: 70%;
+            padding: 0 20px 20px;
             text-align: left;
             font-family: 'IBM Plex Mono', monospace;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            /* Change this to your preferred color */
+        }
+
+        a:hover {
+            color: #0056b3;
+            /* Change this to your preferred hover color */
+        }
+    </style>
+    <style>
+        /* .employment-details {
+            font-family: 'IBM Plex Mono', monospace;
+            width: 50%;
+            margin: 0 auto;
+        }
+     */
+        .employment-details ul {
+            padding-left: inherit;
+            list-style-type: none;
+        }
+
+        .employment-details ul li {
+            margin-bottom: 20px;
+        }
+
+        .employment-details ul li h3 {
+            margin: 0;
+        }
+
+        .employment-details ul li p {
+            margin: 5px 0;
+        }
+
+        .employment-details ul li ul li {
+            margin-left: 20px;
+        }
+
+        .employment-details ul li ul li p {
+            margin: 5px 0;
+        }
+
+        .employment-details a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .employment-details a:hover {
+            color: #0056b3;
+        }
+    </style>
+    <style>
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+            border-bottom: 2px solid;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+            /* Increase the font size */
+            /* border-bottom: 2px solid; */
+            /* Add an underline */
+        }
+
+        .navbar li a:hover {
+            color: red;
+            /* border-bottom: 2px solid red; */
+            /* Change the underline color on hover */
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            /* Ensure the navbar is above other elements */
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>This is Akshay, Nice to meet you!</h1>
-        <p> Hey there, internet traveller. You'll usually find me by username i-rebel-aj (i_rebel_aj too sigh!) on most platforms. 
-            Though my full name is Akshay Jain.
-        </p>
-        <p> 
-            Since I have to be completely "professional" on linkedin, through this site, I want to communicate what I do,
-            what things interest me and some random pictures of my life so far. 
-            Glad to know you traveller!
-        </p>
-        <p>Reach Out: @i_rebel_aj at Discord <i class='fab fa-discord'></i> or <a href="https://twitter.com/i_rebel_aj"> [@i_rebel_aj] <i class='fab fa-twitter'></i></a></p>
-        <p>Find Me: [Github] [Twitter] [Linkedin]</p>
-        
-        On this Page Find:
-        <ul>
-            <li><a href="#about-me">About Me & My Work</a></li>
+    <nav id="navbar">
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#travel">Travel</a></li>
-            <li><a href="#books">My Bookshelf</a></li>
-            <li><a href="#movies">Movies</a></li>
+            <li><a href="#picture">Picture Gallery</a></li>
         </ul>
+    </nav>
+    <div id="home">
+        <h1>This is Akshay, Nice to meet you!</h1>
+        <p> Hey there, internet traveller. You'll usually find me by username i-rebel-aj (i_rebel_aj too sigh!) on most
+            platforms.
+            Though my full name is Akshay Jain.
+        </p>
+        <p>
+            Since I have to be completely "professional" on linkedin, through this site, I want to communicate what I
+            do,
+            what things interest me and some random pictures of my life so far.
+            Glad to know you traveller!
+        </p>
+        <p><span style="font-weight: bold;"> Find Me</span>:  <a href="https://github.com/i-rebel-aj">  [Github] </a> <a href="https://twitter.com/i_rebel_aj">[Twitter]</a> <a href="https://www.linkedin.com/in/akshay-j-11b347137/">[LinkedIn]</a> </p>
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmN5OHNsMHZkOXN5ZnVlOHB5dDQxeXkyZGYxYmEyamI1MmJjMXA5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif"
+            style="opacity: 0.8; max-width: 100%; max-height: 50%; width: 50%; display: block; margin: 0 auto;"
+        />
     </div>
+
     <div id="about-me">
         <h2>So about me</h2>
         <p>
-            Moshi Mosh!
-            I'm Akshay, from Delhi, India. I'm your go-to software guru, helping businesses to go to market from
-            absolute 0.
-            I thrive in the startup hustle, throwing in my inner mad-scientist flair to make things happen!
+            I am Akshay Jain, from New Delhi, India. I love building software, discussing computer science, finance and
+            engaging with early stage startups.
+            I thrive in the startup hustle, understanding business problem and seeing engineering changes in 0-1 scale.
 
             I obtained by Bachelors in Computer Science (2022) from <a href="">Indian Institute of Information
-                Technology, Guwahati</a>.
-        </p>
-        <!-- <img src="https://media1.tenor.com/m/zSX78Rd54CYAAAAd/austin-powers-introduce-myself.gif" style="opacity: 0.8;"/>     -->
+                Technology, Guwahati</a>.</p>
         <p>
-            There are many things that interest me, this website lists some!
-
-            You'll sometimes catch me with a backpack, exploring new places with the excitement of a kid in an Arcade.
-
-            Aviation's got me hooked (working on that license!), also Anime, Guitar and Computer Games.
+            Although primarily a backend engineer, I have a keen interest in Database Systems, Distributed Systems,
+            Compiler Design, Web Servers and Low Level Hardware.
+            I've been programming since 2012, got motivated by my dad who used to have fun with pretty simple codes
+            himself.
+            (Although, I am not sure writing buch of crappy HTML, with WYSWYG editors or building toy apps using C++
+            counts).
         </p>
         <p>
-            From 2021, I've been working at <a href="">Cobalt</a>,now one the leading Integration os in the Industry.
-            I established the tech team and the infrastructure from the very ground up. We solve very exciting problems
-            and I still code a lot!
-
-            Beyond Cobalt, I have been an instructor, sharing my knowledge on backend engineering and software
-            engineering at large.
-            In the frenzy of the recent crypto bull run, I lent a hand in launching various POCs—from NFT marketplaces
-            to auction platforms for various small companies.
-
-            Believing in the backbone role of businesses in a growing economy, I make small investments in
-            consumer-facing ventures. (Fingers crossed for big ones soon!)
+            Besides Computer Science, you'll find me talking a lot about finance, some movies and if you got heart
+            politics. I tend to spend some of my free time exploring Genshin Impact.
         </p>
+
+        <img src="https://media1.tenor.com/m/zSX78Rd54CYAAAAd/austin-powers-introduce-myself.gif"
+            style="opacity: 0.8; max-width: 100%; display: block; margin: 0 auto;" />
+
+        <p>
+            Besides Computer Science, you'll find me talking a lot about finance, some movies and if you got heart
+            politics. I tend to spend some of my free time exploring Genshin Impact.
+        </p>
+
 
     </div>
-    <div>
-        <h3>Work</h3>
+
+    <div class="employment-details" id="work">
+        <h2>Work</h2>
+        <p>I am not sure how much I should mention here, since I've worked dominantly with startups. I've seen a LOT of
+            companies close, often leaving me with nothing substantial to show off.</p>
         <ul>
             <li>
-                <a href="">Cobalt: [2021- Present]</a>:
+                <h3><a href="https://www.gocobalt.io">Cobalt</a></h3>
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">Designation</span>: CTO</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2024- Present</p>
+                        <p><span style="font-weight: bold;">Work (I still code, don't worry :P)</span>: Promoted from
+                            lead software engineer to CTO for outstanding contributions. Overseeing technical and
+                            product planning, focusing on scaling at lower costs, to drive innovation and growth at
+                            Cobalt.</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Designation</span>: Lead Software Engineer</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2022- 2024</p>
+                        <p><span style="font-weight: bold;">Work</span>: Led technical development at early-stage
+                            startup, Cobalt. Designed Low Level Design (LLD) for efficient delivery, reducing
+                            frontend-backend dependencies. Managed scale for 1 million API calls daily. Independently
+                            owned features like embedded iPaaS, making Cobalt the first entrant in this space.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3><a href="https://twitter.com/get_Breakout">Get Breakout</a></h3>
+                <p>(Now Closed)</p>
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">Designation</span>: Software Engineer</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: (2021-2022) </p>
+                        <p><span style="font-weight: bold;">Work</span>: Developed REST APIs for multiple microservices
+                            at Breakout. Enhanced API performance by optimizing MongoDB queries and implementing Redis
+                            caching. Designed scripts for parallel execution across servers, ensuring data consistency
+                            with Redis locks.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a href="">Freelance Software Wizard: [2019- Present]</a>:
+                <h3><a href="https://www.linkedin.com/company/demux-academy/">Demux Academy</a></h3>
+                <p>(Now Closed)</p>
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">Designation</span>: Full Stack Web Development Instructor
+                        </p>
+                        <p><span style="font-weight: bold;">Timeline</span>: (2021) </p>
+                        <p><span style="font-weight: bold;">Work</span>: Conducted sessions on MERN stack development at
+                            Demux Academy. Performed load testing for remote code execution engines like judge0 deployed
+                            on AWS EC2 Instances using Apache JMeter. Assisted the team with web application
+                            development.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a href="">Demux Academy: [2020- 2021]</a>:
+                <h3><a href="https://mobbypark.com/">Mobbypark</a></h3>
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">Designation</span>: Backend Intern</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: (2021) </p>
+                        <p><span style="font-weight: bold;">Work</span>: Developed and deployed REST APIs for the
+                            enterprise, utilized by Android application developers. Conducted testing and documentation
+                            for all APIs in the company's application backend.</p>
+                    </li>
+                </ul>
             </li>
             <li>
-                <a href="">Mobbypark: [2020]</a>:
+                <h3><a href="/">Freelance/Side-Hustles</a></h3>
+                <p>I can guarantee you I am missing here tons where the company closed :(</p>
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">Project</span>: <a href="">WOMO</a></p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2024- Present</p>
+                        <p><span style="font-weight: bold;">Description</span>: A real estate aggregator for co-working
+                            space providers.</p>
+                    </li>
+
+                    <li>
+                        <p><span style="font-weight: bold;">Project</span>: <a href="https://beta.colexion.io/">Colexion
+                                NFT Market Place</a> </p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2022</p>
+                        <p><span style="font-weight: bold;">Description</span>: Created a marketplace containing NFTs of
+                            sports icon. The standard used were ERC721 and ERC1155. Also this market place is <a
+                                href="https://www.pcmag.com/encyclopedia/term/nft-rug-pull">NFT Rugpull</a> proof, by
+                            saving images in Base64 encoded format on IPFS. (Not even trusting pinata lol)</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Project</span>: SOWLOW (Now Closed)</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2022</p>
+                        <p><span style="font-weight: bold;">Work</span>: An online bidding and staking platform of an
+                            ERC20 token. The uses upon maturity will earn interest on the Token</p>
+                    </li>
+                    <li>
+                        <p><span style="font-weight: bold;">Project</span>: Web3India Jobs (Now Closed)</p>
+                        <p><span style="font-weight: bold;">Timeline</span>: 2023</p>
+                        <p><span style="font-weight: bold;">Description:</span> A Job portal for web3 enthusiasts to
+                            find job and earn in crypto.</p>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>
-    <div>
+
+    <div id="blogs">
         <h3>Blogs</h3>
         <ul>
             <li>
@@ -108,6 +298,8 @@
             </li>
         </ul>
     </div>
+
+
     <div id="projects">
         <h3>Projects</h3>
         <p>
@@ -134,9 +326,23 @@
             </li>
         </ul>
     </div>
-    <div>
+    
+    
+    <div id="picture">
         <h3>A Picture Gallery of my travel exp</h3>
     </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+        const navbar = document.getElementById("navbar");
+        const sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>
