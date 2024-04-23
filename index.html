@@ -114,6 +114,16 @@
             z-index: 1000;
             /* Ensure the navbar is above other elements */
         }
+
+        .blog-list {
+            list-style-image: auto;
+        }
+        img{
+            opacity: 0.8;
+            max-width: 100%; 
+            display: block; 
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -124,7 +134,7 @@
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
             <li><a href="#picture">Picture Gallery</a></li>
         </ul>
     </nav>
@@ -140,10 +150,11 @@
             what things interest me and some random pictures of my life so far.
             Glad to know you traveller!
         </p>
-        <p><span style="font-weight: bold;"> Find Me</span>:  <a href="https://github.com/i-rebel-aj">  [Github] </a> <a href="https://twitter.com/i_rebel_aj">[Twitter]</a> <a href="https://www.linkedin.com/in/akshay-j-11b347137/">[LinkedIn]</a> </p>
+        <p><span style="font-weight: bold;"> Find Me</span>: <a href="https://github.com/i-rebel-aj"> [Github] </a> <a
+                href="https://twitter.com/i_rebel_aj">[Twitter]</a> <a
+                href="https://www.linkedin.com/in/akshay-j-11b347137/">[LinkedIn]</a> </p>
         <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmN5OHNsMHZkOXN5ZnVlOHB5dDQxeXkyZGYxYmEyamI1MmJjMXA5cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mTPjPA6SSXgTsnZ1Dh/giphy.gif"
-            style="opacity: 0.8; max-width: 100%; max-height: 50%; width: 50%; display: block; margin: 0 auto;"
-        />
+            style="opacity: 0.8; max-width: 100%; max-height: 50%; width: 50%; display: block; margin: 0 auto;" />
     </div>
 
     <div id="about-me">
@@ -284,36 +295,53 @@
         </ul>
     </div>
 
-    <div id="blogs">
+    <div id="blogs" class="employment-details">
         <h3>Blogs</h3>
+        <p>Well I Write blogs, I have lots in pending stage, hopefully will fix it soon. Meanwhile here have a look with the ones with decent views.</p>
+        <img src="https://i0.wp.com/media2.giphy.com/media/3o7qDHsfqqsgrbP78Y/giphy.gif">
         <ul>
             <li>
-                <a href="">Cobalt: [2021- Present]</a>:
+                <h4><a href="https://medium.com/@i-rebel-aj/demystifying-the-accept-phase-a-dive-into-linux-kernel-handling-of-inbound-requests-b017ccb28f54">Linux Kernel Handling of Inbound Requests</a>:</h4>
+                <span style="font-weight: bold;">About: </span> 
+                This blog explain how linux kernal's handles incomming network requests with the accept phase the accept phase.
             </li>
             <li>
-                <a href="">Freelance Software Wizard: [2019- Present]</a>:
+                <h4><a href="https://medium.com/@i-rebel-aj/a-small-practical-guide-to-message-queues-using-bullmq-and-node-js-85f6b0caa89d">A Guide To Using BullMQ</a>:</h4>
+                <span style="font-weight: bold;">About: </span> 
+                This blog explain how a message queue system is implemented and the motivation of using it. Used library is BullMQ for Node.js.
             </li>
             <li>
-                <a href="">Demux Academy: [2020- 2021]</a>:
+                <h4><a href="https://medium.com/@i-rebel-aj/why-you-should-avoid-using-mongoose-save-method-for-updates-cd841159a4ad">Atomicity concerns with using an ORM such as mongoose</a>:</h4>
+                <span style="font-weight: bold;">About: </span> 
+                In this blog, I try to explain when popularly used ORM's such as mongoose can spell trouble for you. With exploring drawbacks with .save() method.
+            </li>
+            <li>
+                <h4><a href="https://medium.com/@i-rebel-aj/from-slow-to-swift-a-case-study-on-enhancing-typescript-transpilation-efficiency-2f636c6a0ae">A Case Study on Enhancing Typescript Transpilation Efficiency</a>:</h4>
+                <span style="font-weight: bold;">About: </span> 
+                This is a case study where I show importance of dependency management. By reducing build memory that exceeds 2Gigs to 300MB.
+            </li>
+            <li>
+                <h4><a href="https://medium.com/@i-rebel-aj/a-practical-guide-debugging-c-c-programs-using-gdb-and-valgrind-part-1-20e614ce5015">A Short Tutorial on GDB</a>:</h4>
+                <span style="font-weight: bold;">About: </span> 
+                This blog provides a brief tutorial on using GDB (GNU Debugger) for debugging and analyzing C/C++ programs.
             </li>
         </ul>
     </div>
 
-
-    <div id="projects">
+    <!--Add when you have decent projects, you got good blogs-->
+    <!-- <div id="projects">
         <h3>Projects</h3>
         <p>
             I used to feature my public projects here, but right now most of the awesome projects I am making are
-            private.
-            Amongst the projects, I am working on an awesome Insurance App and with some cool friends of mine a basic
-            web browser.
+            private. (Who hasn't have those, right?)
 
             Here you'll find an unordered list of all my presentable projects with the source code. (Well Many end up in
-            github repo coffin :P)
+            github coffin :P)
         </p>
+        <img src="https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2023/05/24/meme-1221602-1684934090.jpg" style="width: 50%;">
         <ul>
             <li>
-                <a href="">Repo Analyzer</a>:
+                <h4> <a href="">Repo Analyzer</a> :</h4>
             </li>
             <li>
                 <a href="">Freelance Software Wizard</a>:
@@ -325,12 +353,15 @@
                 <a href="">Mobbypark</a>:
             </li>
         </ul>
-    </div>
-    
-    
+    </div> -->
+
+
     <div id="picture">
-        <h3>A Picture Gallery of my travel exp</h3>
+        <h3>A Picture Gallery of my travel exp... I'll add it soon</h3>
     </div>
+    <footer style="background-color: #f2f2f2; text-align: center; padding: 20pxpx;">
+        Copyright &copy; Akshay
+    </footer>
     <script>
         window.onscroll = function () { myFunction() };
         const navbar = document.getElementById("navbar");
